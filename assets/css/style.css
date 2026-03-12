@@ -723,12 +723,12 @@ main {
 
 
 /**
- * #badges 
+ * #clients 
  */
 
-.badges { margin-bottom: 15px; }
+.clients { margin-bottom: 15px; }
 
-.badges-list {
+.clients-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -743,18 +743,18 @@ main {
   scroll-padding-inline: 25px;
 }
 
-.badges-item {
+.clients-item {
   min-width: 50%;
   scroll-snap-align: start;
 }
 
-.badges-item img {
+.clients-item img {
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
 
-.badges-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { filter: grayscale(0); }
 
 
 
@@ -1239,7 +1239,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * client
    */
 
-  .badges-item { min-width: calc(33.33% - 10px); }
+  .clients-item { min-width: calc(33.33% - 10px); }
 
 
 
@@ -1482,16 +1482,16 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 35px;
   }
 
-  /* badges */
+  /* clients */
 
-  .badges-list {
+  .clients-list {
     gap: 50px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
   }
 
-  .badges-item { min-width: calc(33.33% - 35px); }
+  .clients-item { min-width: calc(33.33% - 35px); }
 
 
 
@@ -1745,9 +1745,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-item { min-width: calc(50% - 15px); }
 
-  /* badges */
+  /* clients */
 
-  .badges-item { min-width: calc(25% - 38px); }
+  .clients-item { min-width: calc(25% - 38px); }
 
 
 
@@ -1917,4 +1917,33 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 10px 0;
     text-align: center;
   }
+}
+
+/**
+ * #PROJECT PAGES
+ */
+
+.service-item ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.back-link {
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+article[data-page="project"] {
+  color: var(--white-1);
+}
+
+article[data-page="project"] p,
+article[data-page="project"] li {
+  color: var(--white-1);
 }

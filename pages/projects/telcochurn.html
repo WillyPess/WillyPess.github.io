@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telco Customer Churn Analysis | Willy Pessoa</title>
+
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../../assets/images/my-avatar.png" alt="Willy Pessoa" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Willy Pessoa">Willy Pessoa</h1>
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/willy-pessoa/" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/willypess" class="social-link" target="_blank" rel="noopener">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:willypessoa12@gmail.com" class="contact-link">willypessoa12@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+610402884423" class="contact-link">+61 0402 884 423</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Gold Coast, QLD, Australia</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="../../index.html" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="../skills.html" class="navbar-link">Skills</a></li>
+          <li class="navbar-item"><a href="../experience.html" class="navbar-link">Experience</a></li>
+          <li class="navbar-item"><a href="../portfolio.html" class="navbar-link active">Portfolio</a></li>
+          <li class="navbar-item">
+            <a href="../assets/Willy Pessoa - Resume - Software TesterV2.pdf" class="navbar-link resume-download-btn"
+              download>
+              Download CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- PROJECT PAGE -->
+      <article class="about active" data-page="project">
+        <br>
+        <header>
+          <br>
+          <h2 class="h2 article-title">Telco Customer Churn Analysis</h2>
+        </header>
+
+        <!-- SUMMARY -->
+        <section class="about-text">
+          <p>
+            This project demonstrates end-to-end analytics using <strong>MySQL</strong>, <strong>SQL</strong>,
+            <strong>Power Query</strong>, <strong>data modelling</strong>, and <strong>Power BI</strong>, with strong
+            emphasis on data quality checks, metric validation, and trustworthy reporting — leveraging my QA background.
+          </p>
+          <h3>
+            <p>
+              <strong>Business Scenario:</strong> A subscription-based telecom company is experiencing customer churn
+              and
+              needs to understand <strong>who is churning</strong>, <strong>why they are churning</strong>, the
+              <strong>financial impact</strong>, and what <strong>actions</strong> can reduce churn.
+            </p>
+          </h3>
+        </section>
+
+        <!-- DATA CLEANING -->
+        <section class="about-text">
+          <p>
+          <h3 class="h3 service-title">Data Cleaning</h3>
+          Before analysis, the dataset was profiled and cleaned to ensure
+          reliable KPIs. I checked for missing values, inconsistent categorical labels, invalid churn flags, and
+          duplicate-like records. In Power Query, I standardised data types and normalised fields used for
+          segmentation
+          (contract type, payment method, tenure).
+          <br>In MySQL, I applied validation queries to reconcile customer counts
+          across tables/exports and to confirm that churn metrics matched between SQL and Power BI. <br>
+          This process reduced
+          risk of misleading insights caused by data issues.
+          </p>
+        </section>
+
+        <!-- DASHBOARD -->
+        <section class="service">
+          <h3 class="h3 service-title">Dashboard Preview</h3>
+
+          <figure class="project-img" style="margin-top:15px;">
+            <img src="../../assets/images/telcochun.gif" alt="Telco Customer Churn Dashboard Preview" loading="lazy">
+          </figure>
+        </section>
+
+        <!-- KEY INSIGHTS -->
+        <section class="service">
+          <h3 class="h3 service-title">Key Insights</h3>
+
+          <ul>
+            <li><strong>High-risk segments:</strong> Month-to-month contracts and early-tenure customers showed the
+              highest churn propensity, indicating a critical onboarding/retention window.</li>
+            <li><strong>Payment behaviour:</strong> Electronic check users exhibited elevated churn compared to
+              card/direct debit patterns, supporting targeted retention campaigns.</li>
+            <li><strong>Service drivers:</strong> Churn patterns varied by service mix, highlighting opportunities to
+              improve perceived value for specific bundles.</li>
+            <li><strong>Revenue at risk:</strong> Estimated monthly revenue exposure by combining churn segments with
+              recurring charges to prioritise action where impact is highest.</li>
+            <li><strong>Metric integrity:</strong> KPI reconciliation between MySQL outputs and Power BI measures
+              ensured churn rate and totals remained consistent across the pipeline.</li>
+          </ul>
+        </section>
+
+        <!-- BUSINESS ANALYSIS & ACTIONS -->
+        <section class="service">
+          <h3 class="h3 service-title">Business Analysis & Recommended Actions</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <ion-icon name="trending-down-outline"></ion-icon>
+              <div>
+                <h4 class="h4">Retention Focus: Early Tenure Window</h4>
+                <p>
+                  The highest churn risk occurs early in the customer lifecycle, suggesting friction in onboarding,
+                  setup, billing understanding, or initial perceived value.
+                </p>
+                <p>
+                  <strong>Action:</strong> Launch a 30–60 day retention program (welcome journey, proactive support,
+                  setup check-ins, and clear billing education). Track churn changes with a tenure-based cohort KPI.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <ion-icon name="document-text-outline"></ion-icon>
+              <div>
+                <h4 class="h4">Contract Strategy: Reduce Month-to-Month Exposure</h4>
+                <p>
+                  Month-to-month customers are materially more likely to churn, limiting revenue predictability and
+                  increasing acquisition pressure.
+                </p>
+                <p>
+                  <strong>Action:</strong> Incentivise contract upgrades (12–24 months) with targeted offers, pricing
+                  bundles, and loyalty benefits. Prioritise high-charge customers first to maximise impact.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <ion-icon name="card-outline"></ion-icon>
+              <div>
+                <h4 class="h4">Payment Optimisation: Target High-Churn Payment Methods</h4>
+                <p>
+                  Churn is higher for electronic check users, which may indicate payment friction, late fees,
+                  failed payments, or lower engagement.
+                </p>
+                <p>
+                  <strong>Action:</strong> Promote auto-pay adoption (direct debit / card) with small incentives,
+                  reminders, and simplified payment flows. Monitor churn for payment-method cohorts.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <ion-icon name="cube-outline"></ion-icon>
+              <div>
+                <h4 class="h4">Service & Value: Improve Bundles for At-Risk Customers</h4>
+                <p>
+                  Differences in churn by service mix suggest some customers perceive low value in their current bundle
+                  or experience feature gaps.
+                </p>
+                <p>
+                  <strong>Action:</strong> Create “value bundles” for at-risk profiles and run A/B tests: bundle upgrade
+                  offer vs. targeted support. Measure impact with churn rate and monthly revenue retained.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+
+
+        <!-- PROBLEMS -->
+        <section class="about-text">
+          <p>
+            <strong>Problems Addressed:</strong> Stakeholders lacked a clear, trusted churn view because metrics and
+            definitions were inconsistent, segmentation was unclear, and data quality checks were missing. This project
+            standardised churn logic, validated KPIs, and delivered actionable segmentation (contract, payment method,
+            tenure groups, services) to support retention planning.
+          </p>
+        </section>
+
+        <!-- LINKS -->
+        <section class="service">
+          <h3 class="h3 service-title">Links</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <ion-icon name="logo-github"></ion-icon>
+              <div>
+                <h4 class="h4">Repository</h4>
+                <a href="https://github.com/willypess" target="_blank" rel="noopener">
+                  View code, SQL scripts, and documentation
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- TECH STACK -->
+        <section class="service">
+          <h3 class="h3 service-title">Tech Stack</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <ion-icon name="server-outline"></ion-icon>
+              <p>MySQL — data storage, cleaning, transformations, validation queries</p>
+            </li>
+
+            <li class="service-item">
+              <ion-icon name="code-outline"></ion-icon>
+              <p>SQL — CTEs, CASE segmentation, aggregations, churn logic, KPI reconciliation</p>
+            </li>
+
+            <li class="service-item">
+              <ion-icon name="funnel-outline"></ion-icon>
+              <p>Power Query — ETL, data cleaning, standardisation, data preparation</p>
+            </li>
+
+            <li class="service-item">
+              <ion-icon name="bar-chart-outline"></ion-icon>
+              <p>Power BI — executive dashboard, churn drivers, segmentation, drilldowns</p>
+            </li>
+
+            <li class="service-item">
+              <ion-icon name="calculator-outline"></ion-icon>
+              <p>DAX — churn rate, revenue at risk, KPI validation, cohort measures</p>
+            </li>
+
+          </ul>
+        </section>
+
+        <!-- BACK -->
+        <section class="about-text">
+          <a href="../portfolio.html" class="back-link"
+            style="display:inline-flex; align-items:center; gap:5px; margin-top:20px;">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            Back to Portfolio
+          </a>
+        </section>
+      </article>
+
+
+    </div>
+
+  </main>
+
+  <script src="../assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
