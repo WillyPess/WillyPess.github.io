@@ -1942,3 +1942,137 @@ article[data-page="project"] p,
 article[data-page="project"] li {
   color: var(--white-1);
 }
+
+/**
+ * #CERTIFICATIONS
+ */
+
+.certifications { margin-bottom: 30px; }
+
+.certifications-title { margin-bottom: 20px; }
+
+.certifications-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--border-gradient-onyx);
+  padding: 16px 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  position: relative;
+  z-index: 1;
+}
+
+.certification-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.certification-badge {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.certification-info { flex: 1; }
+
+.certification-name {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  margin-bottom: 4px;
+}
+
+.certification-issuer {
+  color: var(--vegas-gold);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-400);
+}
+
+@media (min-width: 580px) {
+  .certifications-list { grid-template-columns: 1fr 1fr; }
+}
+
+/**
+ * #ARTIFACTS
+ */
+
+.artifacts { margin-bottom: 30px; }
+
+.artifacts-title { margin-bottom: 20px; }
+
+.artifacts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.artifact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--border-gradient-onyx);
+  padding: 16px 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  position: relative;
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.artifact-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.artifact-item:hover { box-shadow: var(--shadow-3); }
+
+.artifact-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.artifact-info { flex: 1; }
+
+.artifact-name {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  margin-bottom: 4px;
+}
+
+.artifact-desc {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+}
+
+.artifact-link {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  flex-shrink: 0;
+  transition: var(--transition-1);
+}
+
+.artifact-link:hover { text-decoration: underline; }
+
+@media (min-width: 768px) {
+  .artifacts-list { grid-template-columns: 1fr 1fr; }
+}
