@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Bug Report — FinanceHUB | Willy Pessoa, QA Engineer</title>
+  <meta name="description" content="Sample structured defect report for FinanceHUB with reproduction steps, severity, evidence and root-cause hypothesis, by Willy Pessoa, QA Engineer.">
+
+  <meta property="og:title" content="Sample Bug Report — FinanceHUB | Willy Pessoa">
+  <meta property="og:description" content="Sample structured defect report with reproduction steps, severity, evidence and root-cause hypothesis.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://willypess.github.io/pages/artifacts/bug-report.html">
+  <meta property="og:image" content="https://willypess.github.io/assets/images/my-avatar.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sample Bug Report — FinanceHUB | Willy Pessoa">
+  <meta name="twitter:description" content="Sample structured defect report with reproduction steps, severity, evidence and root-cause hypothesis.">
+  <meta name="twitter:image" content="https://willypess.github.io/assets/images/my-avatar.png">
+  <link rel="canonical" href="https://willypess.github.io/pages/artifacts/bug-report.html">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../../assets/images/my-avatar.png" alt="Willy Pessoa" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Willy Pessoa">Willy Pessoa</h1>
+
+          <p class="title">QA Engineer | Test Automation</p>
+        </div>
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/willy-pessoa/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/willypess" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a href="../../index.html" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a href="../skills.html" class="navbar-link">Skills</a></li>
+            <li class="navbar-item"><a href="../experience.html" class="navbar-link">Experience</a></li>
+            <li class="navbar-item"><a href="../portfolio.html" class="navbar-link active">Portfolio</a></li>
+            <li class="navbar-item">
+              <a href="../../assets/Willy_Pessoa_QA_Engineer_Resume.pdf" class="navbar-link resume-download-btn" download>
+                Download CV
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:willypessoa12@gmail.com" class="contact-link">willypessoa12@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+61402884423" class="contact-link">+61 402 884 423</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gold Coast, QLD, Australia</address>
+              <p class="relocation-note">Open to relocation across Australia</p>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="../../index.html" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="../skills.html" class="navbar-link">Skills</a></li>
+          <li class="navbar-item"><a href="../experience.html" class="navbar-link">Experience</a></li>
+          <li class="navbar-item"><a href="../portfolio.html" class="navbar-link active">Portfolio</a></li>
+          <li class="navbar-item">
+            <a href="../../assets/Willy_Pessoa_QA_Engineer_Resume.pdf" class="navbar-link resume-download-btn" download>
+              Download CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="artifact-page active" data-page="bug-report">
+
+        <a href="../portfolio.html" class="artifact-back-link">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          Back to Portfolio
+        </a>
+
+        <header>
+          <h2 class="h2 article-title">Bug Report — FinanceHUB</h2>
+        </header>
+
+        <span class="artifact-badge">Sample artifact — portfolio demonstration</span>
+
+        <p class="artifact-intro">
+          A realistic defect report for FinanceHUB, formatted the way I document bugs in JIRA/TestRail: clear
+          reproduction steps, expected vs. actual results, severity/priority classification and a root-cause
+          hypothesis to speed up developer triage.
+        </p>
+
+        <section class="artifact-section">
+          <div class="artifact-field-list">
+
+            <p class="artifact-field-label">ID</p>
+            <p class="artifact-field-value">FHUB-214</p>
+
+            <p class="artifact-field-label">Title</p>
+            <p class="artifact-field-value">Monthly expense summary total does not match sum of individual transactions when a transaction is edited mid-month</p>
+
+            <p class="artifact-field-label">Severity</p>
+            <p class="artifact-field-value"><span class="severity-tag">High</span></p>
+
+            <p class="artifact-field-label">Priority</p>
+            <p class="artifact-field-value">P2 — fix before next release</p>
+
+            <p class="artifact-field-label">Environment</p>
+            <p class="artifact-field-value">Staging · Chrome 126 · FinanceHUB build 2026.03.11 · PostgreSQL 15</p>
+
+            <p class="artifact-field-label">Preconditions</p>
+            <p class="artifact-field-value">
+              User is logged in with a seeded test account that has at least 5 expense transactions recorded
+              in the current month, and the "Monthly Summary" widget has already been viewed once (cached).
+            </p>
+
+            <p class="artifact-field-label">Steps to Reproduce</p>
+            <p class="artifact-field-value">
+              1. Log in and open the Dashboard, noting the "Monthly Expenses" total shown in the summary widget.<br>
+              2. Navigate to Transactions and edit the amount of an existing expense transaction from the current
+              month (e.g. change $45.00 to $67.50).<br>
+              3. Save the change and return to the Dashboard without a full page reload (use in-app navigation).<br>
+              4. Compare the "Monthly Expenses" total shown against the actual sum of all listed transactions
+              for the month.
+            </p>
+
+            <p class="artifact-field-label">Expected Result</p>
+            <p class="artifact-field-value">
+              The Monthly Expenses total updates immediately to reflect the edited transaction and equals the
+              sum of all expense transactions for that month.
+            </p>
+
+            <p class="artifact-field-label">Actual Result</p>
+            <p class="artifact-field-value">
+              The Monthly Expenses total still reflects the pre-edit amount until the page is fully reloaded
+              (F5). A direct SQL query against the transactions table confirms the underlying row was updated
+              correctly — the discrepancy is isolated to the cached summary value shown in the UI.
+            </p>
+
+            <p class="artifact-field-label">Evidence</p>
+            <p class="artifact-field-value">
+              Screenshot of Dashboard before/after edit (pre-reload) attached in JIRA ticket FHUB-214.
+              SQL query used for verification: <code>SELECT SUM(amount) FROM transactions WHERE user_id = :id AND type = 'expense' AND date_trunc('month', occurred_at) = date_trunc('month', now());</code>
+              — result matched the expected total, confirming the API/DB layer is correct and the defect is
+              front-end state management only.
+            </p>
+
+            <p class="artifact-field-label">Root-Cause Hypothesis</p>
+            <p class="artifact-field-value">
+              The Dashboard summary widget appears to cache the monthly aggregate in client-side state on first
+              load and does not invalidate that cache when a transaction is edited elsewhere in the app —
+              only a full reload re-fetches the aggregate from the API. Likely fix: invalidate/refetch the
+              summary query on any transaction mutation (create, edit, delete), e.g. via a shared query
+              cache key or event bus.
+            </p>
+
+            <p class="artifact-field-label">Status</p>
+            <p class="artifact-field-value">Open — assigned for triage</p>
+
+          </div>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="../../assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

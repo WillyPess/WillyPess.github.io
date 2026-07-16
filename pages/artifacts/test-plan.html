@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Test Plan — FinanceHUB | Willy Pessoa, QA Engineer</title>
+  <meta name="description" content="Sample ISTQB-style test plan for FinanceHUB, a full-stack finance app. Scope, strategy, risk analysis and exit criteria by Willy Pessoa, QA Engineer.">
+
+  <meta property="og:title" content="Sample Test Plan — FinanceHUB | Willy Pessoa">
+  <meta property="og:description" content="Sample ISTQB-style test plan covering scope, strategy, risk analysis and exit criteria for a full-stack finance app.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://willypess.github.io/pages/artifacts/test-plan.html">
+  <meta property="og:image" content="https://willypess.github.io/assets/images/my-avatar.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sample Test Plan — FinanceHUB | Willy Pessoa">
+  <meta name="twitter:description" content="Sample ISTQB-style test plan covering scope, strategy, risk analysis and exit criteria for a full-stack finance app.">
+  <meta name="twitter:image" content="https://willypess.github.io/assets/images/my-avatar.png">
+  <link rel="canonical" href="https://willypess.github.io/pages/artifacts/test-plan.html">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../../assets/images/my-avatar.png" alt="Willy Pessoa" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Willy Pessoa">Willy Pessoa</h1>
+
+          <p class="title">QA Engineer | Test Automation</p>
+        </div>
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/willy-pessoa/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/willypess" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a href="../../index.html" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a href="../skills.html" class="navbar-link">Skills</a></li>
+            <li class="navbar-item"><a href="../experience.html" class="navbar-link">Experience</a></li>
+            <li class="navbar-item"><a href="../portfolio.html" class="navbar-link active">Portfolio</a></li>
+            <li class="navbar-item">
+              <a href="../../assets/Willy_Pessoa_QA_Engineer_Resume.pdf" class="navbar-link resume-download-btn" download>
+                Download CV
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:willypessoa12@gmail.com" class="contact-link">willypessoa12@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+61402884423" class="contact-link">+61 402 884 423</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gold Coast, QLD, Australia</address>
+              <p class="relocation-note">Open to relocation across Australia</p>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="../../index.html" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="../skills.html" class="navbar-link">Skills</a></li>
+          <li class="navbar-item"><a href="../experience.html" class="navbar-link">Experience</a></li>
+          <li class="navbar-item"><a href="../portfolio.html" class="navbar-link active">Portfolio</a></li>
+          <li class="navbar-item">
+            <a href="../../assets/Willy_Pessoa_QA_Engineer_Resume.pdf" class="navbar-link resume-download-btn" download>
+              Download CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="artifact-page active" data-page="test-plan">
+
+        <a href="../portfolio.html" class="artifact-back-link">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          Back to Portfolio
+        </a>
+
+        <header>
+          <h2 class="h2 article-title">Test Plan — FinanceHUB</h2>
+        </header>
+
+        <span class="artifact-badge">Sample artifact — portfolio demonstration</span>
+
+        <p class="artifact-intro">
+          FinanceHUB is a full-stack personal finance application (React frontend, Express REST API, SQL
+          database, JWT authentication with refresh tokens) built to serve as a realistic target for QA
+          automation practice. This document is a condensed, ISTQB-style test plan illustrating how I approach
+          planning for a project of this size — it is not tied to a live release and is intended purely to
+          demonstrate my documentation process.
+        </p>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">1. Introduction &amp; Objectives</h3>
+          <p>
+            This plan defines the scope, approach, resources and schedule of testing activities for FinanceHUB.
+            The primary objective is to verify that core financial workflows — authentication, transaction
+            management, subscriptions, debts, investments and monthly summaries — behave correctly, securely and
+            consistently with the underlying data, before any release is considered ready.
+          </p>
+          <p>
+            Secondary objectives are to establish a repeatable regression suite (Cypress E2E + API tests), to
+            catch data-integrity issues at the SQL layer early, and to produce evidence (reports, logs, screenshots)
+            that supports fast triage when defects are found.
+          </p>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">2. Scope</h3>
+          <div class="artifact-columns">
+            <div>
+              <h4 class="h4">In Scope</h4>
+              <ul>
+                <li>User registration, login, JWT access &amp; refresh token flow, logout</li>
+                <li>Transactions: create, edit, delete, list, filter</li>
+                <li>Subscriptions: recurring charge tracking and renewal dates</li>
+                <li>Debts: balance tracking and repayment schedules</li>
+                <li>Investments: holdings and valuation display</li>
+                <li>Monthly summary calculations and aggregation</li>
+                <li>REST API contract validation (status codes, payloads, auth headers)</li>
+                <li>SQL-level data-integrity checks against API/UI results</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="h4">Out of Scope</h4>
+              <ul>
+                <li>Third-party payment gateway internals (mocked in test environment)</li>
+                <li>Load/performance testing beyond smoke-level checks</li>
+                <li>Native mobile app (web-only application)</li>
+                <li>Infrastructure/deployment pipeline testing</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">3. Test Strategy &amp; Levels</h3>
+          <p>A layered strategy is used so that failures are caught as close as possible to their source:</p>
+          <ul>
+            <li>
+              <strong>End-to-End (Cypress):</strong> user-facing flows exercised through the React UI — login,
+              token refresh on expiry, transaction CRUD, subscription/debt/investment management, and monthly
+              summary rendering. Page objects and Faker.js-generated data keep suites maintainable and independent
+              of fixed data.
+            </li>
+            <li>
+              <strong>API validation:</strong> direct testing of the Express REST endpoints (Postman/automated
+              scripts) for authentication, authorization, status codes, response schemas, and edge cases
+              (expired tokens, invalid payloads, unauthorized access to another user's data).
+            </li>
+            <li>
+              <strong>SQL data-integrity checks:</strong> queries run against the database after UI/API actions
+              to confirm that what is persisted matches what is displayed — particularly for calculated fields
+              such as monthly summaries, running balances and subscription renewal dates.
+            </li>
+          </ul>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">4. Risk Analysis</h3>
+          <div class="artifact-table-wrapper">
+            <table class="artifact-table">
+              <thead>
+                <tr>
+                  <th>Risk Area</th>
+                  <th>Description</th>
+                  <th>Impact</th>
+                  <th>Mitigation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Auth &amp; session handling</td>
+                  <td>Refresh token not rotated or expired token accepted, allowing session hijack or unwanted logout</td>
+                  <td>High</td>
+                  <td>Dedicated E2E and API tests for token expiry, refresh, and revocation paths</td>
+                </tr>
+                <tr>
+                  <td>Transaction integrity</td>
+                  <td>Concurrent edits or deletions cause lost updates or duplicate entries</td>
+                  <td>High</td>
+                  <td>API-level negative tests plus SQL checks for orphaned/duplicate records</td>
+                </tr>
+                <tr>
+                  <td>Calculation accuracy</td>
+                  <td>Rounding or aggregation errors in monthly summaries (see linked bug report sample)</td>
+                  <td>Medium</td>
+                  <td>Cross-check UI totals against SQL aggregate queries for each test period</td>
+                </tr>
+                <tr>
+                  <td>Authorization boundaries</td>
+                  <td>A user able to view or modify another user's financial data via API</td>
+                  <td>High</td>
+                  <td>Explicit cross-account API tests using two seeded test users</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">5. Test Environment</h3>
+          <ul>
+            <li>Dedicated staging environment with a seeded, isolated SQL database (never shared with production data)</li>
+            <li>Backend: Node.js / Express REST API, JWT auth (access + refresh tokens)</li>
+            <li>Frontend: React, served via a Dockerized environment for repeatable local and CI runs</li>
+            <li>Test data generated with Faker.js to avoid dependence on hand-crafted fixtures</li>
+            <li>Cypress for E2E, Postman/Newman for API, direct SQL client for data-integrity queries</li>
+          </ul>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">6. Entry &amp; Exit Criteria</h3>
+          <div class="artifact-columns">
+            <div>
+              <h4 class="h4">Entry Criteria</h4>
+              <ul>
+                <li>Feature branch deployed to the staging environment</li>
+                <li>Test environment seeded and reachable (API + DB healthy)</li>
+                <li>Test cases reviewed and mapped to acceptance criteria</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="h4">Exit Criteria</h4>
+              <ul>
+                <li>100% of planned E2E and API test cases executed</li>
+                <li>No open High-severity defects</li>
+                <li>SQL data-integrity checks pass for all in-scope features</li>
+                <li>Known Medium/Low defects logged with agreed follow-up</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">7. Deliverables</h3>
+          <ul>
+            <li>This test plan document</li>
+            <li>Cypress E2E automated test suite and execution report</li>
+            <li>API test collection (Postman/Newman) and results</li>
+            <li>SQL data-integrity check scripts</li>
+            <li>Defect reports for any issues found (see the <a href="./bug-report.html" style="color: var(--orange-yellow-crayola);">sample bug report</a>)</li>
+            <li>Test summary report at exit</li>
+          </ul>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">8. Feature &rarr; Test Type Coverage</h3>
+          <div class="artifact-table-wrapper">
+            <table class="artifact-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>E2E (Cypress)</th>
+                  <th>API Validation</th>
+                  <th>SQL Data-Integrity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Login / token refresh</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Transactions (CRUD)</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Subscriptions</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Debts</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Investments</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Monthly summaries</td>
+                  <td>Yes</td>
+                  <td>—</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="../../assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
