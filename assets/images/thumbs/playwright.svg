@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="playwright-title playwright-desc">
+  <title id="playwright-title">Playwright</title>
+  <desc id="playwright-desc">Cross-browser E2E proof of concept — Playwright, TypeScript</desc>
+
+  <defs>
+    <linearGradient id="bg-playwright" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b2b2c"/>
+      <stop offset="100%" stop-color="#1a1a1b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-playwright)"/>
+
+  <g opacity="0.12" stroke="#ffdb70" stroke-width="2" fill="none">
+    <circle cx="650" cy="120" r="70"/>
+    <circle cx="650" cy="120" r="40"/>
+    <line x1="650" y1="50" x2="650" y2="190"/>
+    <line x1="580" y1="120" x2="720" y2="120"/>
+  </g>
+
+  <rect x="48" y="48" width="56" height="4" fill="#ffdb70"/>
+
+  <text x="48" y="220" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="64" font-weight="600" fill="#fafafa">Playwright</text>
+  <text x="48" y="264" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="300" fill="#c9c9c9">Cross-browser E2E POC</text>
+
+  <g font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="500" fill="#ffdb70">
+    <rect x="48" y="352" width="106" height="34" rx="6" fill="#333" stroke="#444"/>
+    <text x="101" y="374" text-anchor="middle">Playwright</text>
+
+    <rect x="166" y="352" width="112" height="34" rx="6" fill="#333" stroke="#444"/>
+    <text x="222" y="374" text-anchor="middle">TypeScript</text>
+  </g>
+</svg>

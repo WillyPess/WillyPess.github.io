@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="starwars-db-title starwars-db-desc">
+  <title id="starwars-db-title">SQL WebApp</title>
+  <desc id="starwars-db-desc">Data integrity testing practice — JavaScript, SQL</desc>
+
+  <defs>
+    <linearGradient id="bg-starwars-db" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b2b2c"/>
+      <stop offset="100%" stop-color="#1a1a1b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-starwars-db)"/>
+
+  <g opacity="0.12" stroke="#ffdb70" stroke-width="2" fill="none">
+    <ellipse cx="650" cy="120" rx="80" ry="26"/>
+    <path d="M570 120 v50 a80 26 0 0 0 160 0 v-50"/>
+    <ellipse cx="650" cy="170" rx="80" ry="26"/>
+  </g>
+
+  <rect x="48" y="48" width="56" height="4" fill="#ffdb70"/>
+
+  <text x="48" y="220" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="64" font-weight="600" fill="#fafafa">SQL WebApp</text>
+  <text x="48" y="264" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="300" fill="#c9c9c9">Data Integrity Practice</text>
+
+  <g font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="500" fill="#ffdb70">
+    <rect x="48" y="352" width="112" height="34" rx="6" fill="#333" stroke="#444"/>
+    <text x="104" y="374" text-anchor="middle">JavaScript</text>
+
+    <rect x="176" y="352" width="64" height="34" rx="6" fill="#333" stroke="#444"/>
+    <text x="208" y="374" text-anchor="middle">SQL</text>
+  </g>
+</svg>

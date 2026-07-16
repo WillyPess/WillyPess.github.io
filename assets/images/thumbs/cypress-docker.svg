@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="cypress-docker-title cypress-docker-desc">
+  <title id="cypress-docker-title">Cypress + Docker</title>
+  <desc id="cypress-docker-desc">E2E automation suite — Cypress, Docker, Faker.js</desc>
+
+  <defs>
+    <linearGradient id="bg-cypress-docker" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b2b2c"/>
+      <stop offset="100%" stop-color="#1a1a1b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-cypress-docker)"/>
+
+  <g opacity="0.12" stroke="#ffdb70" stroke-width="2" fill="none">
+    <rect x="560" y="60" width="180" height="130" rx="10"/>
+    <rect x="590" y="90" width="120" height="70" rx="6"/>
+    <path d="M600 100 l100 50 M700 100 l-100 50" />
+  </g>
+
+  <rect x="48" y="48" width="56" height="4" fill="#ffdb70"/>
+
+  <text x="48" y="210" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="58" font-weight="600" fill="#fafafa">Cypress + Docker</text>
+  <text x="48" y="254" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="300" fill="#c9c9c9">E2E Automation Suite</text>
+
+  <g font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="500" fill="#ffdb70">
+    <rect x="48" y="352" width="92" height="34" rx="6" fill="#333" stroke="#444"/>
+    <text x="94" y="374" text-anchor="middle">Cypress</text>
+
+    <rect x="152" y="352" width="84" height="34" rx="6" fill="#333" stroke="#444"/>
+    <text x="194" y="374" text-anchor="middle">Docker</text>
+
+    <rect x="248" y="352" width="92" height="34" rx="6" fill="#333" stroke="#444"/>
+    <text x="294" y="374" text-anchor="middle">Faker.js</text>
+  </g>
+</svg>
