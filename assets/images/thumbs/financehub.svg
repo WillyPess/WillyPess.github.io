@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="financehub-title financehub-desc">
   <title id="financehub-title">FinanceHUB</title>
-  <desc id="financehub-desc">E2E and API test target — Node.js, React, SQL</desc>
+  <desc id="financehub-desc">Full-stack finance app — Node.js, React, SQL</desc>
 
   <defs>
     <linearGradient id="bg-financehub" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -21,7 +21,7 @@
   <rect x="48" y="48" width="56" height="4" fill="#ffdb70"/>
 
   <text x="48" y="220" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="64" font-weight="600" fill="#fafafa">FinanceHUB</text>
-  <text x="48" y="264" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="300" fill="#c9c9c9">E2E + API Test Target</text>
+  <text x="48" y="264" font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="300" fill="#c9c9c9">Full-Stack Finance App</text>
 
   <g font-family="'Poppins', 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="500" fill="#ffdb70">
     <rect x="48" y="352" width="92" height="34" rx="6" fill="#333" stroke="#444"/>
