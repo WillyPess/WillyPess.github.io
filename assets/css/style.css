@@ -2196,6 +2196,21 @@ article[data-page="project"] li {
   flex-shrink: 0;
 }
 
+.artifact-tag-real {
+  display: inline-block;
+  background: var(--bg-gradient-yellow-2);
+  color: var(--orange-yellow-crayola);
+  font-size: 10px;
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--jet);
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 .artifact-info { flex: 1; }
 
 .artifact-name {

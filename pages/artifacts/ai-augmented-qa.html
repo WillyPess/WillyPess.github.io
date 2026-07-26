@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Augmented QA Workflow | Willy Pessoa, QA Engineer</title>
+  <meta name="description" content="How Willy Pessoa uses AI coding agents in a real QA and test automation practice — working principles and a real CI/CD debugging example.">
+
+  <meta property="og:title" content="AI-Augmented QA Workflow | Willy Pessoa">
+  <meta property="og:description" content="How I use AI coding agents in my QA practice — real example included, from an actual project.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://willypess.github.io/pages/artifacts/ai-augmented-qa.html">
+  <meta property="og:image" content="https://willypess.github.io/assets/images/my-avatar.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI-Augmented QA Workflow | Willy Pessoa">
+  <meta name="twitter:description" content="How I use AI coding agents in my QA practice — real example included, from an actual project.">
+  <meta name="twitter:image" content="https://willypess.github.io/assets/images/my-avatar.png">
+  <link rel="canonical" href="https://willypess.github.io/pages/artifacts/ai-augmented-qa.html">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../../assets/images/my-avatar.png" alt="Willy Pessoa" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Willy Pessoa">Willy Pessoa</h1>
+
+          <p class="title">QA Engineer | Test Automation</p>
+        </div>
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/willy-pessoa/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/willypess" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a href="../../index.html" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a href="../skills.html" class="navbar-link">Skills</a></li>
+            <li class="navbar-item"><a href="../experience.html" class="navbar-link">Experience</a></li>
+            <li class="navbar-item"><a href="../portfolio.html" class="navbar-link active">Portfolio</a></li>
+            <li class="navbar-item">
+              <a href="../../assets/Willy_Pessoa_QA_Engineer_Resume.pdf" class="navbar-link resume-download-btn" download>
+                Download CV
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:willypessoa12@gmail.com" class="contact-link">willypessoa12@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+61402884423" class="contact-link">+61 402 884 423</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gold Coast, QLD, Australia</address>
+              <p class="relocation-note">Open to relocation across Australia</p>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="../../index.html" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="../skills.html" class="navbar-link">Skills</a></li>
+          <li class="navbar-item"><a href="../experience.html" class="navbar-link">Experience</a></li>
+          <li class="navbar-item"><a href="../portfolio.html" class="navbar-link active">Portfolio</a></li>
+          <li class="navbar-item">
+            <a href="../../assets/Willy_Pessoa_QA_Engineer_Resume.pdf" class="navbar-link resume-download-btn" download>
+              Download CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="artifact-page active" data-page="ai-augmented-qa">
+
+        <a href="../portfolio.html" class="artifact-back-link">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          Back to Portfolio
+        </a>
+
+        <header>
+          <h2 class="h2 article-title">AI-Augmented QA Workflow</h2>
+        </header>
+
+        <span class="artifact-badge">Real workflow — from an actual project</span>
+
+        <p class="artifact-intro">
+          I use AI coding agents (Claude Code) as part of my QA and automation practice — not to replace test
+          design or judgment, but to accelerate implementation while I own the strategy, review every change,
+          and verify every claim before it ships. This page walks through a real example.
+        </p>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">My working principles</h3>
+          <ul>
+            <li>I always review the diff before any commit — I don't accept AI-generated changes blind.</li>
+            <li>I ask the agent to inspect real code/logs before writing anything, instead of letting it assume.</li>
+            <li>I verify claims against live evidence (a passing pipeline, a rendered page, a query result) rather than trusting a description of success.</li>
+            <li>I keep commits scoped and reversible, and I never let an agent push to a live/production branch without my explicit confirmation.</li>
+            <li>Commit messages and authorship stay mine — no co-author trailers, no "generated with" tags.</li>
+          </ul>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">Real example: diagnosing a CI/CD pipeline failure</h3>
+          <p>
+            I added a GitHub Actions workflow to a Playwright E2E test suite to publish the HTML test report and
+            a live test plan/bug registry to GitHub Pages after every run.
+          </p>
+          <p>
+            The first attempt failed: the publish step returned a 403 error — <code>remote: Permission to
+            [repo] denied to github-actions[bot]</code> — because the default <code>GITHUB_TOKEN</code> lacked
+            write access to push the <code>gh-pages</code> branch.
+          </p>
+          <p>
+            I reviewed the actual Actions log to find the root cause rather than guessing, then added a minimal
+            <code>permissions: contents: write</code> block scoped only to the job that needed it, and checked
+            the diff before committing.
+          </p>
+          <p>
+            Once publishing succeeded, a second issue turned up: the root URL landed on a page with two links
+            instead of going straight to the most relevant one, the test plan. I adjusted the generated
+            <code>index.html</code> to redirect directly, again reviewing the exact diff before pushing.
+          </p>
+          <p>
+            After each change I confirmed the live URLs actually worked in the browser, rather than assuming
+            success from the tool's own report.
+          </p>
+          <p>
+            The outcome is a working CI pipeline that runs the suite on every push, fails on any test failure,
+            and publishes a live, browsable test report and bug registry:
+            <a href="https://willypess.github.io/saucedemo-playwright-e2e/" target="_blank" style="color: var(--orange-yellow-crayola);">live report</a>
+            &middot;
+            <a href="https://github.com/WillyPess/saucedemo-playwright-e2e" target="_blank" style="color: var(--orange-yellow-crayola);">repository</a>.
+          </p>
+        </section>
+
+        <section class="artifact-section">
+          <h3 class="h3 artifact-section-title">Where I draw the line</h3>
+          <p>
+            AI accelerates the mechanical parts — writing YAML, generating boilerplate, drafting documentation —
+            but test strategy, risk analysis, what to automate vs. not, and sign-off on what actually ships are
+            mine. Every automated suite and CI pipeline in this portfolio was built this way: agent-assisted,
+            human-verified.
+          </p>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="../../assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
