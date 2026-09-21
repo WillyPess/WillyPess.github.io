@@ -24,7 +24,14 @@
     { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
   );
 
-  items.forEach((el) => observer.observe(el));
+  // wait a frame so the browser paints the initial opacity:0 state first,
+  // otherwise above-the-fold elements flip to visible before there's anything
+  // to transition from and just appear instantly
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      items.forEach((el) => observer.observe(el));
+    });
+  });
 })();
 
 
