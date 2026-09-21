@@ -15,7 +15,7 @@
     (entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-          entry.target.style.transitionDelay = Math.min(i * 60, 240) + 'ms';
+          entry.target.style.transitionDelay = Math.min(i * 90, 360) + 'ms';
           entry.target.classList.add('is-visible');
           observer.unobserve(entry.target);
         }
