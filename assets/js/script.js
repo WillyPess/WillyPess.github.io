@@ -11,6 +11,39 @@
 })();
 
 
+// mobile menu: hamburger opens the nav panel; link, outside tap, Escape or going wide closes it
+(function () {
+  const header = document.querySelector('.site-header');
+  const toggle = document.querySelector('[data-nav-toggle]');
+  if (!header || !toggle) return;
+
+  const isOpen = () => header.classList.contains('nav-open');
+  const setOpen = (open) => {
+    header.classList.toggle('nav-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+
+  toggle.addEventListener('click', () => setOpen(!isOpen()));
+  header.querySelectorAll('.nav-link').forEach((link) => link.addEventListener('click', () => setOpen(false)));
+
+  document.addEventListener('click', (e) => {
+    if (isOpen() && !header.contains(e.target)) setOpen(false);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen()) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+
+  window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => {
+    if (e.matches) setOpen(false);
+  });
+})();
+
+
 // scroll-reveal: fades in [data-reveal] elements as they enter the viewport
 (function () {
   const items = document.querySelectorAll('[data-reveal]');
