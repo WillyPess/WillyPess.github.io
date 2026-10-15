@@ -27,14 +27,19 @@
   <header class="site-header">
     <nav class="nav container">
       <a href="../index.html" class="nav-brand">Willy Pessoa</a>
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
         <a href="../index.html" class="nav-link">About</a>
         <a href="./skills.html" class="nav-link">Skills</a>
         <a href="./experience.html" class="nav-link active">Experience</a>
         <a href="./portfolio.html" class="nav-link">Portfolio</a>
         <a href="./contact.html" class="nav-link">Contact</a>
       </div>
-      <a href="../assets/Willy_Pessoa_QA_Engineer_Resume.pdf" class="btn btn-primary nav-cta" download>
+      <a href="../assets/Willy_Pessoa_QA_Engineer_Resume.pdf" class="btn btn-primary nav-cta" aria-label="Download resume" download>
         <ion-icon name="download-outline"></ion-icon>
         <span>Resume</span>
       </a>
