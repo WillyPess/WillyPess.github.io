@@ -59,6 +59,11 @@
   --accent-strong: #0b5c50;
   --accent-soft: #e3f3f0;
   --accent-contrast: #ffffff;
+  --on-accent: #ffffff;
+
+  /* translucent header and the light tile behind cert logos */
+  --header-bg: hsla(210, 20%, 99%, 0.85);
+  --badge-bg: #eef1f4;
 
   /* status (used only for real semantic state: severity tags) */
   --danger: #c0392b;
@@ -93,6 +98,41 @@
   --dur-reveal: 0.9s;
 
   --container: 1120px;
+
+  color-scheme: light;
+}
+
+/* dark theme: set on <html> by the inline <head> script (saved choice, else device
+   setting) and flipped by the header toggle in script.js */
+:root[data-theme="dark"] {
+  --bg: #0f141a;
+  --bg-raised: #18202a;
+  --surface: #151c24;
+  --surface-hover: #1d2631;
+  --border: #2a3441;
+  --border-soft: #222b36;
+
+  --text-primary: #e8edf2;
+  --text-secondary: #a3adba;
+  --text-tertiary: #7d8796;
+
+  /* brighter teal for text on dark; buttons keep a deep teal with white text */
+  --accent: #3cc4ae;
+  --accent-strong: #117a6a;
+  --accent-soft: #14302c;
+  --accent-contrast: #06231e;
+
+  --danger: #f07167;
+  --danger-soft: #3a1d1b;
+
+  --header-bg: hsla(213, 27%, 8%, 0.85);
+  --badge-bg: #e8edf2;
+
+  --shadow-sm: 0 1px 2px hsla(220, 40%, 2%, 0.4);
+  --shadow-md: 0 8px 24px hsla(220, 40%, 2%, 0.45);
+  --shadow-lg: 0 24px 60px hsla(220, 40%, 2%, 0.55);
+
+  color-scheme: dark;
 }
 
 
@@ -230,7 +270,7 @@ h1, h2, h3, h4 {
 
 .btn-primary {
   background: var(--accent-strong);
-  color: hsl(0, 0%, 100%);
+  color: var(--on-accent);
 }
 
 .btn-primary:hover { background: var(--accent); color: var(--accent-contrast); }
@@ -255,7 +295,7 @@ h1, h2, h3, h4 {
   inset-inline: 0;
   top: 0;
   z-index: 50;
-  background: hsla(210, 20%, 99%, 0.85);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-soft);
   transition: box-shadow var(--dur) var(--ease);
@@ -310,6 +350,39 @@ h1, h2, h3, h4 {
 
 .nav-cta { margin-left: 8px; flex-shrink: 0; }
 
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-input);
+  cursor: pointer;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+
+.theme-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* moon offers dark mode, sun offers light mode */
+.theme-icon-sun,
+[data-theme="dark"] .theme-icon-moon { display: none; }
+[data-theme="dark"] .theme-icon-sun { display: block; }
+
 .nav-toggle { display: none; }
 
 /* phones: one-row header, links move into a drop-down panel toggled by script.js */
@@ -322,6 +395,7 @@ h1, h2, h3, h4 {
   /* toggle sits before the links in the DOM so Tab moves into the open panel;
      order puts it back after the resume button visually */
   .nav-cta { padding: 12px; margin-left: 0; order: 1; }
+  .theme-toggle { width: 44px; height: 44px; margin-left: 0; }
 
   .nav-toggle {
     order: 2;
@@ -658,7 +732,7 @@ h1, h2, h3, h4 {
   object-fit: contain;
   flex-shrink: 0;
   border-radius: var(--radius-input);
-  background: var(--bg-raised);
+  background: var(--badge-bg);
   padding: 6px;
 }
 
@@ -1232,7 +1306,7 @@ textarea.form-input { min-height: 120px; resize: vertical; }
 @media (min-width: 640px) { .form-btn { width: max-content; } }
 
 .form-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-.form-btn:disabled:hover { background: var(--accent-strong); color: hsl(0,0%,100%); }
+.form-btn:disabled:hover { background: var(--accent-strong); color: var(--on-accent); }
 
 
 /*-----------------------------------*\
