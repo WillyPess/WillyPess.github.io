@@ -4,11 +4,6 @@ Personal portfolio site for Willy Pessoa, served by GitHub Pages from `main`
 (https://willypess.github.io). Plain HTML, CSS and JS: `index.html`, `pages/`,
 `assets/css/style.css`, `assets/js/script.js`. No build step.
 
-## How to talk to me
-
-- Always use the `caveman:caveman` skill when talking to me. Short, simple words.
-- Code, file names and commands stay normal.
-
 ## How to make changes
 
 1. **Plan first.** Before editing, tell me what you will change and wait for my "yes".
