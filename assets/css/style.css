@@ -418,10 +418,10 @@ h1, h2, h3, h4 {
   width: 100%;
   max-width: 640px;
   margin-inline: auto;
-  text-align: left;
+  text-align: center;
 }
 
-.about-block .section-title { text-align: center; }
+.about-block .section-sub { margin-inline: auto; }
 
 .hero-portrait img {
   width: 100%;
