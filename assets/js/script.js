@@ -1,5 +1,16 @@
 'use strict';
 
+// header: soft shadow once the page scrolls
+(function () {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  const update = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+})();
+
+
 // scroll-reveal: fades in [data-reveal] elements as they enter the viewport
 (function () {
   const items = document.querySelectorAll('[data-reveal]');
@@ -10,6 +21,9 @@
     items.forEach((el) => el.classList.add('is-visible'));
     return;
   }
+
+  // animations.js owns reveal motion when GSAP loaded; this stays as the fallback
+  if (window.gsap && window.ScrollTrigger) return;
 
   const observer = new IntersectionObserver(
     (entries) => {
