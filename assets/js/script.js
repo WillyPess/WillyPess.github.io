@@ -1,5 +1,41 @@
 'use strict';
 
+// theme toggle: flips light/dark and remembers the choice; with no saved choice,
+// keeps following the device setting (the inline <head> script sets the first one)
+(function () {
+  const root = document.documentElement;
+  const toggle = document.querySelector('[data-theme-toggle]');
+  const deviceDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const saved = () => {
+    try {
+      const theme = localStorage.getItem('theme');
+      return theme === 'light' || theme === 'dark' ? theme : null;
+    } catch (e) {
+      return null;
+    }
+  };
+
+  const apply = (theme) => {
+    root.dataset.theme = theme;
+    if (toggle) toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  };
+
+  apply(root.dataset.theme === 'dark' ? 'dark' : 'light');
+
+  deviceDark.addEventListener('change', (e) => {
+    if (!saved()) apply(e.matches ? 'dark' : 'light');
+  });
+
+  if (!toggle) return;
+  toggle.addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    apply(next);
+    try { localStorage.setItem('theme', next); } catch (e) { /* private mode: still switches, just not remembered */ }
+  });
+})();
+
+
 // header: soft shadow once the page scrolls
 (function () {
   const header = document.querySelector('.site-header');
